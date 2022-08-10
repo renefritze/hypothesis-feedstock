@@ -14,7 +14,7 @@ build:
   entry_points:
     - hypothesis = hypothesis.extra.cli:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -37,6 +37,7 @@ test:
     - django
     - pandas
     - pip
+    - exceptiongroup >=1.0.0rc8
   imports:
     - hypothesis
     - hypothesis.extra
